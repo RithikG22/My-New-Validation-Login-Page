@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation Form | By Rithik Grk</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer ></script>
+</head>
+<body>
+   <div class="container">
+    <header>Login Now</header>
+    
+    <div class="col">
+        <label for="username">Username</label>
+        <input type="text" id="username" class="error-input" placeholder="Please Enter Your Name">
+        <p  class="errormsg">Please Enter Your Name</p>
+    </div>
+    <div class="col">
+        <label for="password">Password</label>
+        <input type="password" id="password" class="error-input" placeholder="Password is 123">
+        <p class="correct-details"></p>
+        <p  class="errormsg">Please enter Password</p>
+    </div>
+    <button class="login">Login</button>
+    <div class="login-sucessfull">
+        <p>Login Sucess</p>
+        <h3>Hello ,<span id="yourname"></span> <br>welcome !!!</h3>
+        <button id="logout">logout</button>
+    </div>
+   </div>
+   <div class="credits">
+    <p> < Designed and Coded By Rithik Grk /> </p>
+   </div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    list-style: none;
+}
+body{
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#2d9afd,#d671f7);
+}
+.container{
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 10px;
+    position: relative;
+}
+header{
+    text-align: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+.col input{
+    padding: 8px;
+    outline: none;
+}
+.login{
+    width: 100%;
+    padding: 8px;
+    background-color: #2d9afd;
+    border:none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.login:hover{
+    filter: brightness(110%);
+}
+.col label{
+    font-size: 10px;
+}
+.errormsg{
+    font-size: 10px;
+    margin-top: 5px;
+    color: red;
+    display: none;
+}
+.error-msg-show{
+    display: unset;
+}
+.bor-red{
+    border: 1px solid red;
+}
+.login-sucessfull{
+    position: absolute;
+    height: 120%;
+    width: 120%;
+    background-color: rgb(131, 187, 131);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+    display: none;
+}
+.after-login{
+    display: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.login-sucessfull h3{
+    font-size: 30px;
+}
+#logout{
+    padding: 10px;
+    background-color: #2d9afd;
+    border: none;
+    color: white;
+}
+.correct-details{
+    color: red;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 12px;
+}
+input::placeholder{
+    font-size: 10px;
+}
+.credits{
+    color: white;
+    margin-top: 20px;
+}
